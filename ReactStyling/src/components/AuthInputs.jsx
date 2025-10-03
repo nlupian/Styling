@@ -21,8 +21,8 @@ const Input = styled.input`
   padding: 0.75rem 1rem;
   line-height: 1.5;
   background-color: ${({ invalid }) => (invalid ? '#fed2d2' : '#d1d5db')};
-  color: ${({ invalid }) => (invalid ? 'ef4444' : '374151')};
-  border: 1px solid ${({ invalid }) => (invalid ? '#f73f3f' : 'transparent')};
+  color: ${({ $invalid }) => ($invalid ? 'ef4444' : '374151')};
+  border: 1px solid ${({ $invalid }) => ($invalid ? '#f73f3f' : 'transparent')};
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 `;
@@ -51,9 +51,9 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <ControlContainer>
         <p className="paragraph">
-          <Label invalid={emailNotValid}>Email</Label>
+          <Label $invalid={emailNotValid}>Email</Label>
           <Input
-            invalid={emailNotValid}
+            $invalid={emailNotValid}
             type="email"
             // style={{
             //   backgroundColor: emailNotValid ? '#fed2d2' : '#d1d5db',
@@ -63,9 +63,9 @@ export default function AuthInputs() {
           />
         </p>
         <p>
-          <Label invalid={passwordNotValid}>Password</Label>
+          <Label $invalid={passwordNotValid}>Password</Label>
           <Input
-            invalid={passwordNotValid}
+            $invalid={passwordNotValid}
             type="password"
             style={{
               backgroundColor: passwordNotValid ? '#fed2d2' : '#d1d5db',
