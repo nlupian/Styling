@@ -28,7 +28,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-padding: 1rem 2rem;
+  padding: 1rem 2rem;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 0.25rem;
@@ -38,9 +38,9 @@ padding: 1rem 2rem;
   border: none;
 
   &:hover {
-background-color: #f0920e;
+    background-color: #f0920e;
   }
-`
+`;
 
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -96,9 +96,9 @@ export default function AuthInputs() {
         <button type="button" className="text-button">
           Create a new account
         </button>
-        <button className="button" onClick={handleLogin}>
+        <Button className="button" onClick={handleLogin}>
           Sign In
-        </button>
+        </Button>
       </div>
     </div>
   );
