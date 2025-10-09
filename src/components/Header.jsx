@@ -47,6 +47,7 @@ export default function Header() {
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
       <p>A community of artists and art-lovers.</p>
+      <p className="text-6xl font-bold border p-2 rounded-xl m-4"> testing</p>
     </StyledHeader>
   );
 }
