@@ -9,12 +9,14 @@ const StyledHeader = styled.header`
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
   & img {
     object-fit: contain;
     margin-bottom: 2rem;
     width: 11rem;
     height: 11rem;
   }
+
   & h1 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -47,7 +49,6 @@ export default function Header() {
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
       <p>A community of artists and art-lovers.</p>
-      <p className="text-6xl font-bold border p-2 rounded-xl m-4"> testing</p>
     </StyledHeader>
   );
 }
