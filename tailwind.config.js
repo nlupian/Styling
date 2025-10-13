@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        title: ['"Pacifico"', 'cursive']
-      }
+        title: ['"Pacifico"', 'cursive'],
+      },
     },
   },
   plugins: [],
